@@ -1,0 +1,24 @@
+<h2 class="text-center mb-4"><%= title %></h2>
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <form action="<%= formSubmits.action %>" method="<%= formSubmits.method %>" <% if (typeof(formSubmits.enctype) != 'undefined') { %> enctype="<%= formSubmits.enctype %>" <% } %> class="p-4 bg-white shadow rounded">
+            <% formInputs.forEach(input => { %>
+                <div class="mb-3">
+                    <label for="<%= input.label %>" class="form-label"><%= input.text %></label>
+                    <% if (input.type !== "textarea") { %>
+                        <input type="<%= input.type %>" class="form-control" id="<%= input.label %>" name="<%= input.label %>"
+                                <% if (input.type === "file") { %>accept="image/*"<% } %> <% if (input.required) { %>required<% } %>>
+                    <% } else { %>
+                        <textarea class="form-control" id="<%= input.label %>" name="<%= input.label %>" rows="5" <% if (input.required) { %>required<% } %>></textarea>
+                    <% } %>
+                </div>
+            <% }); %>
+            <button type="submit" class="btn btn-primary w-100"><%= submit_button %></button>
+            <% if (typeof(post) != 'undefined') { %>
+                    <button onclick="toggleView('post')" class="btn btn-secondary w-100 mt-2">Cancel</button>
+            <% } else if (typeof(user) != 'undefined') { %>
+                    <p class="text-center mt-2">Registration successful</p>
+            <% } %>
+        </form>
+    </div>
+</div>

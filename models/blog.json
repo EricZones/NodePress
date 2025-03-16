@@ -1,0 +1,40 @@
+[
+  {
+    "id": 0,
+    "title": "Test",
+    "username": "DDDD",
+    "date": "2003-09-18",
+    "text": "Test"
+  },
+  {
+    "id": 1,
+    "title": "Test",
+    "username": "David24",
+    "date": "2020-02-18",
+    "text": "Testing"
+  },
+  {
+    "id": 2,
+    "title": "New posting",
+    "username": "David240",
+    "date": "2023-02-18",
+    "text": "At its best",
+    "image": "uploads/picture2.png"
+  },
+  {
+    "id": 3,
+    "title": "tttttt",
+    "username": "dddddd",
+    "date": "2001-01-01",
+    "text": "kkkkkk",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "title": "fdkdlkjfdk",
+    "username": "fdkljfdlkj",
+    "date": "2992-03-08",
+    "text": "fdkfjdkl",
+    "image": "uploads/picture.jpg"
+  }
+]

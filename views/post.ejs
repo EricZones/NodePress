@@ -1,0 +1,23 @@
+<%- include('partials/header'); %>
+
+<div id="form-container">
+    <%- include('partials/form'); %>
+</div>
+
+<div id="viewpost-container">
+    <% if (typeof(post) != 'undefined') { %>
+        <%- include('partials/viewpost'); %>
+    <% } %>
+</div>
+
+<script>
+    <% if (typeof(post) != 'undefined') { %>
+        document.getElementById('form-container').style.display = 'none';
+    <% } %>
+    function toggleView(view) {
+        document.getElementById('form-container').style.display = view === 'form' ? 'block' : 'none';
+        document.getElementById('viewpost-container').style.display = view === 'post' ? 'block' : 'none';
+    }
+</script>
+
+<%- include('partials/footer'); %>
