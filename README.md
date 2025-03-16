@@ -1,6 +1,6 @@
 # NodePress
 
-NodePress is a web application using Node.js and Express with the EJS view engine implementing blogposts and users. It is accessible by browser and REST API. The focus is on the implementation of functionalities, not the frontend design or the protection against data loss while writing.
+NodePress is a web application using Node.js and Express with the EJS view engine implementing blogposts and users. It is accessible by browser and REST API. The focus is on the implementation of functionalities, neither on the frontend design nor the protection against data loss while writing.
 
 ## Features
 - **Frontend:**
@@ -12,8 +12,8 @@ NodePress is a web application using Node.js and Express with the EJS view engin
 - **Backend:**
     - Dynamic form used for registration and blogpost creation
     - Uniform header and footer
-    - Post view includes post creation form and post view by dynamically toggling the visible element
-    - Dynamic blogposts view with button to render single post view
+    - Post view includes both post creation form and detailed post view by dynamically toggling visible elements
+    - Dynamic blogposts view with buttons to render detailed post view
     - Asynchronous user/blog methods and API access
     - Asynchronous JSON file reading/writing
 
@@ -43,9 +43,6 @@ NodePress is a web application using Node.js and Express with the EJS view engin
 | GET        | `/api/users/:id` | Get registered user by id    |
 | PUT        | `/api/users/:id` | Update registered user by id |
 | DELETE     | `/api/users/:id` | Delete registered user by id |
-
-## Contributors
-- **EricZones** - Developer
 
 ## Purpose
 The project combines technologies for web applications like Node.js and Fetch by providing accessibility for browsers and API requests.
