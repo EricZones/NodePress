@@ -1,6 +1,6 @@
 # NodePress
 
-NodePress is a web application using Node.js and Express with the EJS view engine implementing blogposts and users. It is accessible by browser and REST API. The focus is on the implementation of functionalities, not the frontend design or the protection against data loss while writing.
+NodePress is a web application using Node.js and Express with the EJS view engine implementing blogposts and users. It is accessible by browser and REST API. The focus is on the implementation of functionalities, neither on the frontend design nor the protection against data loss while writing.
 
 ## Features
 - **Frontend:**
